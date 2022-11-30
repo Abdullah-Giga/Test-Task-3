@@ -9,7 +9,6 @@ body{
 }
 
 .main{
-    /* width: max-content; */
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,18 +24,17 @@ body{
 }
 
 .all-day{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
     background-color: #EDF1F1;
-    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
 }
 
-.all-day > .item{
-    width: 78.1%;
-    padding: 1%;
-    margin: .5% 0%;
+.item-all{
+    margin-left: 20%;
+    width: 80%;
+    padding: 1% 0%;
     background: white;
     border-left: 10px solid green;
 }
@@ -90,7 +88,6 @@ body{
     display: flex;
     flex-direction: row;
     height: 60px;
-    /* padding-right: 10%; */
 }
 h2{
     margin-right: 10%;
@@ -104,18 +101,11 @@ b{
 .items{
     display: flex;
     flex-direction: row;
-    /* margin-left: 10%; */
-    /* position: absolute;
-    top: 0; */
-    /* bottom: 0; */
     width: 90%;
 }
 .r-item-full{
     padding: 1%;
     width: 100%;
-    /* margin-left: 10%; */
-    /* display: flex;
-    flex-direction: row; */
     margin-right: 1%;
     background: white;
     border-left: 10px solid green;
@@ -125,17 +115,13 @@ b{
     display: flex;
     flex-direction: row;
     margin-left: 1%;
-    /* position: absolute; */
     top: 0;
-    /* bottom: 0; */
     width: 94.7%;
     z-index: 1;
 }
 .r-item-half{
     padding: 1%;
     width: 100%;
-    /* margin-left: 10%; */
-    /* margin-right: 1%; */
     background: white;
     border-left: 10px solid green;
     z-index: 1; 
@@ -149,21 +135,17 @@ b{
 ._11-am{
     border-bottom: none;
 }
-._12-pm{
+._12-pm, ._9-am{
     border-top: none;
 }
 
 .sub-am, .sub-pm{
     border-top: 1px solid #CDCECF ;
-    /* width: 93%; */
     float: right;
     margin-left: 5%;
-    /* padding-top: 1%;
-    padding-bottom: 3%; */
     color: gray;
     display: flex;
     flex-direction: row;
     position: relative;
     height: 60px;
-    
 }
