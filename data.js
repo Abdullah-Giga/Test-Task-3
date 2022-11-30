@@ -1,14 +1,11 @@
-// This array tajes data <= 12.5pm and >= 9 am
-const objArr_am = [
+
+// This array takes data in 24 hour format i.e 1 pm is 13 pm 2pm is 14pm
+
+const objArr = [
   {
     start: 9,
     end: 13,
   },
-];
-
-// This array takes data in 24 hour format i.e 1 pm is 13 pm 2pm is 14pm
-
-const objArr_pm = [
   {
     start: 13,
     end: 14,
@@ -27,17 +24,12 @@ const objArr_pm = [
   },
 ];
 
-// Sorting both arrays individually wrt the time sequence
-objArr_am.sort(function (a, b) {
-  return a.start - b.start;
-});
-objArr_pm.sort(function (a, b) {
+// Sorting array wrt the time sequence
+objArr.sort(function (a, b) {
   return a.start - b.start;
 });
 
 
-// making a combined array
-const objArr = objArr_am.concat(objArr_pm);
 
 
 // Functio to hande 24 hour format
@@ -51,7 +43,7 @@ function time(start) {
 
 // Makng a new div for every scheduled task
 const getDiv = (start) => {
-  let div = `
+  let div = ` 
     
     <div class="r-item-full" >
     <span class="gray-text">${time(
