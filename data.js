@@ -4,11 +4,12 @@
 
 const objArr = [
   
+  // {
+  //   start: "All-day",
+  //   name : "Sample Item",
+  //   location : "Sample Location"
+  // },
   {
-    start: "All-day",
-    name : "Sample Item",
-    location : "Sample Location"
-  },{
     start: 9,
     end: 20,
     name : "Sample Item",
@@ -72,6 +73,9 @@ let allDay;
 for(let i = 0; i<objArr.length;i++){
   if(objArr[i].start == "All-day"){
     allDay = objArr.splice(i,1);
+  }
+  else{
+    return;
   }
 }
 j.innerHTML = `<div class="item">
