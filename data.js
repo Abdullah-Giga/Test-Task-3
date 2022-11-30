@@ -4,10 +4,6 @@ const objArr_am = [
     start: 9,
     end: 13,
   },
-  {
-    start: 10,
-    end: 11,
-  },
 ];
 
 // This array takes data in 24 hour format i.e 1 pm is 13 pm 2pm is 14pm
