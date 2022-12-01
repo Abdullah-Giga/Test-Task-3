@@ -37,7 +37,7 @@ const getDiv = (start, name, location) => {
   return div;
 };
 
-// Making new dv to handle tie starting with .5 or :30 minute format
+// Making new dv to handle time starting with .5 or :30 minute format
 
 const getDivHalf = (start, name, location) => {
   let div = `
