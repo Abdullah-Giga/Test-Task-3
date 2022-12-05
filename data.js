@@ -30,6 +30,11 @@ const objArr = [
     end: 14,
     name: "Sample Item",
     location: "Sample Location",
+  }, {
+    start: 11,
+    end: 14,
+    name: "Sample Item",
+    location: "Sample Location",
   },
   {
     start: 12,
